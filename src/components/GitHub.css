@@ -1,0 +1,51 @@
+.github-band {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.github-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px 40px;
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.github-info h3 { font-size: 22px; font-weight: 500; margin-bottom: 6px; }
+.github-info p   { font-size: 15px; color: var(--text-secondary); }
+.github-info a   { color: var(--accent); }
+
+/* ── Heatmap ── */
+.contrib-wrap { margin-top: 40px; }
+
+.contrib-grid {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+.contrib-col  { display: flex; flex-direction: column; gap: 4px; }
+.contrib-cell {
+  width: 13px; height: 13px;
+  border-radius: 3px;
+  background: var(--surface3);
+  transition: transform .15s;
+  flex-shrink: 0;
+}
+.contrib-cell:hover { transform: scale(1.4); }
+.contrib-cell.l1 { background: rgba(255,107,53,.2); }
+.contrib-cell.l2 { background: rgba(255,107,53,.45); }
+.contrib-cell.l3 { background: rgba(255,107,53,.72); }
+.contrib-cell.l4 { background: var(--accent); box-shadow: 0 0 5px rgba(255,107,53,.45); }
+
+.contrib-note {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: right;
+  margin-top: 10px;
+}

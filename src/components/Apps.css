@@ -1,0 +1,10 @@
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 56px;
+}
+
+@media (max-width: 720px) {
+  .apps-grid { grid-template-columns: 1fr; }
+}

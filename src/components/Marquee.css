@@ -1,0 +1,36 @@
+.marquee-wrap {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+  padding: 14px 0;
+  background: var(--surface);
+}
+
+.marquee-track {
+  display: flex;
+  animation: marquee 28s linear infinite;
+  white-space: nowrap;
+}
+.marquee-track:hover { animation-play-state: paused; }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 28px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  letter-spacing: .06em;
+}
+
+.marquee-dot {
+  color: var(--accent);
+  font-size: 16px;
+  line-height: 0;
+}

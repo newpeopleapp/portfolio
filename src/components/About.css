@@ -1,0 +1,93 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 56px;
+  align-items: start;
+}
+
+.about-text p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 18px;
+}
+.about-text p strong { color: var(--text); font-weight: 500; }
+
+/* ── Swift code block ── */
+.swift-block {
+  background: #0d1117;            /* GitHub dark */
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-top: 28px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.9;
+}
+.swift-block-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  background: #161b22;
+}
+.dot {
+  width: 11px; height: 11px;
+  border-radius: 50%;
+}
+.dot.red    { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green  { background: #27c93f; }
+.swift-block-filename {
+  margin-left: 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: .04em;
+}
+.swift-block pre {
+  padding: 20px 24px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.kw   { color: #ff79c6; }
+.type { color: #8be9fd; }
+.str  { color: #50fa7b; }
+.num  { color: #bd93f9; }
+.cm   { color: var(--text-muted); }
+
+/* ── Info card ── */
+.about-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+.about-card-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+.info-row:last-child { border-bottom: none; }
+.info-label { color: var(--text-muted); }
+.info-value { color: var(--text); }
+.info-value.accent { color: var(--accent); }
+.info-value.green  { color: var(--green);  }
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; }
+}
