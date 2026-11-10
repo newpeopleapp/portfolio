@@ -8,7 +8,6 @@ import "./styles/global.css";
 import { profile, skills, experience, apps, marqueeItems } from "./data/portfolio";
 
 // Components
-import Cursor     from "./components/Cursor";
 import Navbar     from "./components/Navbar";
 import Hero       from "./components/Hero";
 import Marquee    from "./components/Marquee";
@@ -28,7 +27,6 @@ export default function App() {
 
   return (
     <>
-      <Cursor />
       <Navbar cvPath={profile.cv} />
 
       <main>

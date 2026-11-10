@@ -47,7 +47,7 @@ export default function About({ profile }) {
             { label: "Role",            value: "Senior iOS Developer"   },
             { label: "Location",        value: "📍 Madrid, Spain"       },
             { label: "Current company", value: "Capgemini", accent: true },
-            { label: "Status",          value: "● Available", green: true },
+            { label: "Status",          value: "● Open to opportunities", green: true },
             { label: "Languages",       value: "Swift · Obj-C · JS"     },
             { label: "Experience",      value: `${profile.experience} years` },
             { label: "Specialty",       value: "SwiftUI · Architecture" },
