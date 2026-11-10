@@ -8,7 +8,7 @@ export const profile = {
   title: "Senior iOS Developer",
   tagline: "Engineer by craft, designer by passion",
   location: "Madrid, Spain",
-  status: "Available for new projects",
+  status: "Open to new opportunities",
   available: true,
   experience: "8+",
   appsShipped: "20+",
@@ -104,7 +104,7 @@ export const experience = [
     role: "iOS Developer",
     company: "Capgemini · Madrid",
     description:
-      "Leading the migration of legacy Objective-C codebases to modern Swift while delivering high-quality features for large-scale enterprise projects.",
+      "iOS consultant for Caser, Helvetia (Spain & Switzerland) and Airbus (Finland). Leading the migration of legacy Objective-C codebases to modern Swift while delivering high-quality features for large-scale enterprise apps.",
   },
   {
     date: "2024",
@@ -114,7 +114,7 @@ export const experience = [
       "Built features for a cybersecurity iOS application, enhancing performance, reliability, and user experience across multiple iOS versions.",
   },
   {
-    date: "2018 — Present",
+    date: "2018 — 2025",
     role: "iOS Developer & UI/UX Designer",
     company: "Freelance · Remote",
     description:
@@ -159,6 +159,45 @@ export const apps = [
       { label: "UIKit", variant: "default" },
       { label: "Storyboard", variant: "default" },
       { label: "CocoaPods", variant: "default" },
+    ],
+  },
+  {
+    icon: "🩺",
+    name: "Helvetia Salud",
+    description:
+      "Health insurance app for Helvetia Seguros in Spain: digital medical card, provider search, authorisations and video consultations. Developed as iOS consultant at Capgemini.",
+    appStore: "https://apps.apple.com/es/app/helvetia-salud/id6469604635",
+    image: null,
+    tech: [
+      { label: "Swift", variant: "swift" },
+      { label: "SwiftUI", variant: "swiftui" },
+      { label: "UIKit", variant: "default" },
+      { label: "Objective-C", variant: "default" },
+    ],
+  },
+  {
+    icon: "🇨🇭",
+    name: "myHelvetia",
+    description:
+      "Digital insurance companion for Helvetia Switzerland customers: policies, documents, claims and advisor contact. Developed as iOS consultant at Capgemini.",
+    appStore: "https://apps.apple.com/ch/app/myhelvetia/id6445954638",
+    image: null,
+    tech: [
+      { label: "Swift", variant: "swift" },
+      { label: "SwiftUI", variant: "swiftui" },
+      { label: "Enterprise", variant: "default" },
+    ],
+  },
+  {
+    icon: "✈️",
+    name: "Airbus — Finland",
+    description:
+      "Enterprise iOS application for Airbus in Finland. Internal distribution. Developed as iOS consultant at Capgemini.",
+    appStore: null, // private app
+    image: null,
+    tech: [
+      { label: "Swift", variant: "swift" },
+      { label: "Enterprise", variant: "default" },
     ],
   },
   {

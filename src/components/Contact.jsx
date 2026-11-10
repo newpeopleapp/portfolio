@@ -37,7 +37,7 @@ export default function Contact({ profile }) {
       <p className="section-label reveal">Get in touch</p>
       <h2 className="reveal">Let's <em>build</em> together</h2>
       <p className="contact-sub reveal">
-        Open to new opportunities, freelance projects, and interesting collaborations.
+        Open to new full-time opportunities and interesting collaborations.
       </p>
 
       <div className="contact-grid">
